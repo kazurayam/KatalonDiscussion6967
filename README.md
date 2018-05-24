@@ -1,4 +1,4 @@
-Custom Katalon Keyword: FindElementsByXpath.getElementContentAsList(String xpath4elements)
+Custom Katalon Keyword: FindElementsByXpath.getElementContentsAsList(String xpath4elements)
 =====
 
 # What is this?
@@ -21,7 +21,7 @@ I have a target web page like this:
 
 I am interested in the list of `<option>` elements in this page.
 
-I want to verify the contents of these displayed `<option>` elements against other list of Strings (`Tokyo CURA Healthcare Center`, `Hongkong CURA Healthcare Center`, `Seoul CURA Healthcare Center`). Not only the content:`<option>content</option>`, I want to verify the value of attributes:`<option value="value">` 
+I want to verify the contents of these displayed `<option>` elements against other list of Strings (`'Tokyo CURA Healthcare Center'`, `'Hongkong CURA Healthcare Center'`, `'Seoul CURA Healthcare Center'`). Not only the content:`<option>content</option>`, I also want to verify the value of attributes:`<option value="value">`
 
 In Katalon Studio, we can make [Test Object](https://docs.katalon.com/display/KD/Manage+Test+Object). Using [findTestObject](https://api-docs.katalon.com/studio/v4.7.0/api/com/kms/katalon/core/testobject/ObjectRepository.html) method we can grasp a single `<option>` element amongst the set of `<option>`s. The sample Test Case [TC_by_builtin_keyword](https://github.com/kazurayam/KatalonDiscussion6967/blob/master/Scripts/TC_by_builtin_keywords/Script1527139026235.groovy) shows how to get access the content string of `<option>` elements.
 
@@ -29,7 +29,21 @@ However I find a primitive shortage:
 
 - I want to get the varying size of `<option>` element list. It is mandatory to control `for (int i=0; i<SIZE; i++)`. But there is no Katalon's build-in keyword.
 
+All I could do is to introduce a magic number `3`:
 
+```
+def expectedContents = [
+	"Tokyo CURA Healthcare Center",
+	"Hongkong CURA Healthcare Center",
+	"Seoul CURA Healthcare Center" ]
+
+for (int i = 0; i < 3; i++) {
+    def text = WebUI.getText(findTestObject('facility_option_indexed', [('index') : i + 1]))
+    WebUI.verifyEqual(text, expectedContents[i])
+}
+```
+
+This magic number is too ugly.
 
 # Solution proposed
 
