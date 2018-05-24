@@ -8,9 +8,9 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 
 
 class FindElementsByXPath {
-	
+
 	@Keyword
-	List<String> getElementTextAsList(String xpath4element) {
+	List<String> getElementContentsAsList(String xpath4element) {
 		WebDriver webDriver = DriverFactory.getWebDriver()
 		List<WebElement> elements = webDriver.findElements(By.xpath(xpath4element))
 		def contents = new ArrayList<String>()
@@ -23,9 +23,9 @@ class FindElementsByXPath {
 		}
 		return contents
 	}
-	
+
 	@Keyword
-	List<String> getAttributeTextAsList(String xpath4element, String attributeName) {
+	List<String> getAttributeValuesAsList(String xpath4element, String attributeName) {
 		WebDriver webDriver = DriverFactory.getWebDriver()
 		List<WebElement> elements = webDriver.findElements(By.xpath(xpath4element))
 		def values = new ArrayList<String>()

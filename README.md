@@ -1,4 +1,4 @@
-How to run a Katalon script using a Chrome executable installed in a non-standard location
+Custom Katalon Keyword: FindElementsByXpath.getElementContentAsList(String xpath)
 =====
 
 # What is this?
@@ -8,16 +8,14 @@ You can clone this out on you PC and execute it with your Katalon Stduio.
 
 This project is developed to propose a solution for the following discussion:
 
-- https://forum.katalon.com/discussion/6944/test-execution-running-katalon-scripts-in-same-browser-with-different-version
+
+- https://forum.katalon.com/discussion/6967/get-text-of-multiple-div-elements#latest
 
 Question raised there was:
 
->Hi, Can we run Katalon scripts in same browser with different versions.
-Say i have two different google chrome versions installed (v66, v65), i wanted to run Testcase1 in v66 and Testcase 2 in v65.
-
+>
 # Solution proposed
 
-With a few lines of code in a Katalon Test Case, you can start a Chrome browser using a chrome.exe installed in a non-standard location. This demo shows how to do it.
 
 # description
 
