@@ -1,4 +1,4 @@
-Custom Katalon Keyword: FindElementsByXpath.getElementContentAsList(String xpath)
+Custom Katalon Keyword: FindElementsByXpath.getElementContentAsList(String xpath4elements)
 =====
 
 # What is this?
@@ -8,20 +8,23 @@ You can clone this out on you PC and execute it with your Katalon Stduio.
 
 This project is developed to propose a solution for the following discussion:
 
-
-- https://forum.katalon.com/discussion/6967/get-text-of-multiple-div-elements#latest
+- https://forum.katalon.com/discussion/6967/get-text-of-multiple-div-elements
 
 Question raised there was:
 
->
+> I want to get the text of specific elements (names), store them in an array and compare them to an other array.
+
+# Problem to solve
+
+I assume I have a target web page like this:
+![Target web page](https://github.com/kazurayam/KatalonDiscussion6967/blob/master/docs/6967_testbed.png)
+
+
+
 # Solution proposed
 
+TODO
 
-# description
+# Description
 
-read code of the [Test case script](https://github.com/kazurayam/KatalonDiscussion6944/blob/master/Scripts/TC1/Script1527037412367.groovy)
-
-# References
-
-- [chromedriver document/ capabilities and options](http://chromedriver.chromium.org/capabilities)
-- [Katalon Forum/how to get chomedriver.log](https://forum.katalon.com/discussion/6736/getting-chromedriverlog-when-you-run-recordspy-web-to-investigate-why-ks-failed-to-start-chrome)
+TODO
