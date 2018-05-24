@@ -15,8 +15,9 @@ class FindElementsByXPath {
 		List<WebElement> elements = webDriver.findElements(By.xpath(xpath4element))
 		def contents = new ArrayList<String>()
 		for (WebElement el : elements) {
-			if (el.getText() != null) {
-				contents.add(el.getText())
+			def content = el.getText()
+			if (content != null) {
+				contents.add(content)
 			} else {
 				contents.add('')
 			}
@@ -32,7 +33,7 @@ class FindElementsByXPath {
 		for (WebElement el : elements) {
 			def value = el.getAttribute(attributeName)
 			if (value != null) {
-				values.add(el.getAttribute(attributeName))
+				values.add(value)
 			} else {
 				values.add('')
 			}
