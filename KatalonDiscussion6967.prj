@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+   <description>https://forum.katalon.com/discussion/6967/get-text-of-multiple-div-elements</description>
+   <name>KatalonDiscussion6967</name>
+   <tag></tag>
+   <UUID>10b2e9c8-5208-4e0b-af8d-40969e7c596d</UUID>
+   <migratedVersion>5.4.0</migratedVersion>
+   <pageLoadTimeout>0</pageLoadTimeout>
+</Project>
