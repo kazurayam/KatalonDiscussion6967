@@ -1,4 +1,4 @@
-Custom Katalon Keyword: FindElementsByXpath.getElementContentsAsList(String xpath4elements)
+Custom Katalon Keyword: get contents of HTML elements as list
 =====
 
 # What is this?
