@@ -42,9 +42,9 @@ I can not resolve `????` above.
 I have developed a Groovy class.
 - [`com.kazurayam.ksbackyard.com.kazurayam.ksbackyard.FindElementsByXPath`](https://github.com/kazurayam/KatalonDiscussion6967/blob/master/Keywords/com/kazurayam/ksbackyard/FindElementsByXPath.groovy)
 
-This class provides 2 methods (Keyword)
-- `getElementContentsAsList(String xpath4elements)`
-- `getElementAttributesAsList(String xpath4elements, String attributeName)`
+This class provides 2 methods (Keyword) which returns a List of Strings.
+- `List<String> getElementContentsAsList(String xpath4elements)`
+- `List<String> getElementAttributesAsList(String xpath4elements, String attributeName)`
 
 ```
 def expectedContents = [
