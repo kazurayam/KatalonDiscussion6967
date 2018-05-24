@@ -11,7 +11,7 @@ def expectedContents = [
 	"Hongkong CURA Healthcare Center",
 	"Seoul CURA Healthcare Center" ]
 
-for (int i = 0; i < 3; i++) {
+for (int i = 0; i < expectedContents.size(); i++) {
     def text = WebUI.getText(findTestObject('facility_option_indexed', [('index') : i + 1]))
     WebUI.verifyEqual(text, expectedContents[i])
 }
