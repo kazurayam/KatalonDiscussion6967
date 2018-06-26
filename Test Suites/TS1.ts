@@ -4,6 +4,7 @@
    <name>TS1</name>
    <tag></tag>
    <isRerun>false</isRerun>
+   <lastRun>2018-06-26T10:09:40</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -13,13 +14,19 @@
    <testCaseLink>
       <guid>970190a1-c77e-41f2-bcf1-9afb882ca0f1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/TC_by_builtin_keywords</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>2592be32-0f7d-48c1-832c-965397ba9c16</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/TC_by_custom_keywords</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f07904da-4d7e-4e66-b228-99b30864d1ca</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC_WebElements</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
