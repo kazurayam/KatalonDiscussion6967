@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_WebElements</name>
+   <name>TC_getWebElementsAsList</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>dec0950f-d575-4012-bc3f-d2136334f819</testCaseGuid>

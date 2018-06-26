@@ -27,6 +27,6 @@
       <guid>f07904da-4d7e-4e66-b228-99b30864d1ca</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC_WebElements</testCaseId>
+      <testCaseId>Test Cases/TC_getWebElementsAsList</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
